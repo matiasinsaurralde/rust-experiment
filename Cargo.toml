@@ -1,0 +1,11 @@
+[package]
+name = "playground3"
+version = "0.1.0"
+authors = ["Matias Insaurralde <matias@insaurral.de>"]
+
+[dependencies]
+bytes = "0.4"
+libc = "0.2"
+
+[build-dependencies]
+cc = "1"
