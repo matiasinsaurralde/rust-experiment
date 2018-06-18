@@ -8,6 +8,7 @@ use libc::c_int;
 pub struct worker {
     _unused: [u8; 0],
 }
+    
 
 extern {
     fn worker_new() -> *mut worker;

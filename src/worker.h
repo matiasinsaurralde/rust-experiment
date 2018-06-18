@@ -10,9 +10,9 @@ typedef struct worker_s worker;
 worker* worker_new();
 void worker_set_rust_object(worker*, void*);
 
-void trigger_callback(worker*, int);
+int trigger_callback(worker*, int);
 
-void rust_callback(void*, int);
+int rust_callback(void*, int);
 
 #ifdef __cplusplus
 }  // extern "C"

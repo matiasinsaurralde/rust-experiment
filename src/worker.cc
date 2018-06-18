@@ -21,7 +21,7 @@ void worker_set_rust_object(worker* w, void* rust_object) {
     w->rust_object = rust_object;
 };
 
-void trigger_callback(worker* w, int n) {
+int trigger_callback(worker* w, int n) {
     printf("trigger_callback: worker = %p rust_object = %p\n", w, w->rust_object);
-    rust_callback(w->rust_object, n);
+    return rust_callback(w->rust_object, n);
 };
